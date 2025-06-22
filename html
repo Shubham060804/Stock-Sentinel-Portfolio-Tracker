@@ -1,0 +1,7 @@
+<script>
+fetch('output.json')
+  .then(res => res.json())
+  .then(data => {
+    document.body.innerHTML += `<h2>Total Gain: $${data.totalGain}</h2>`;
+  });
+</script>
